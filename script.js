@@ -16,3 +16,22 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 
+// -------------------------------------------------------
+// ESERCIZIO 1: CONTROLLO EMAIL
+// -------------------------------------------------------
+
+// 1. Creo la lista delle email invitate
+const invitedEmails = [
+  "marco@gmail.com",
+  "anna@yahoo.com",
+  "francesco@hotmail.com",
+  "luca@gmail.com",
+  "roxy@example.com"
+];
+
+// 2. Chiedo all'utente la sua email
+const userEmail = prompt("Inserisci qui la tua email:");
+
+// 3. Imposto una variabile che mi dirà se la email è stata trovata
+let found = false;
+
