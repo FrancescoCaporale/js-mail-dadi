@@ -52,3 +52,22 @@ if (found) {
 // -------------------------------------------------------
 // ESERCIZIO 2: GIOCO DEI DADI
 // -------------------------------------------------------
+
+// 1. Genero il numero random per il giocatore (1-6)
+const playerNumber = Math.floor(Math.random() * 6) + 1;
+
+// 2. Genero il numero random per il computer (1-6)
+const computerNumber = Math.floor(Math.random() * 6) + 1;
+
+// 3. Stampo i risultati
+console.log("Giocatore ha tirato:", playerNumber);
+console.log("Computer ha tirato:", computerNumber);
+
+// 4. Stabilisco il vincitore
+if (playerNumber > computerNumber) {
+  console.log( "Hai vinto!");
+} else if (playerNumber < computerNumber) {
+  console.log("Ha vinto il computer!");
+} else {
+  console.log("Pareggio!");
+}
