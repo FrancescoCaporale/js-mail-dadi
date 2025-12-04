@@ -35,3 +35,20 @@ const userEmail = prompt("Inserisci qui la tua email:");
 // 3. Imposto una variabile che mi dirà se la email è stata trovata
 let found = false;
 
+// controllo ogni email dentro l'array: se una coincide con quella dell'utente segno che è stata trovata
+for (let i = 0; i < invitedEmails.length; i++) {
+  if (userEmail === invitedEmails[i]) {
+    found = true;
+  }
+}
+
+// 5. Stampo il risultato in console
+if (found) {
+  console.log("Accesso consentito, sei nella lista!");
+} else {
+  console.log("Accesso negato, non risulti tra gli invitati.");
+}
+
+// -------------------------------------------------------
+// ESERCIZIO 2: GIOCO DEI DADI
+// -------------------------------------------------------
